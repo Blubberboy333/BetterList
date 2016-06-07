@@ -15,7 +15,10 @@ class Main extends PluginBase{
 	
    public function onCommand(CommandSender $sender, Command $command, $label, array $args){
             if(strtolower($cmd->getName()) == "list"){
-              $online = ???
+              $online = 0;
+              foreach($this->getOnlinePlayers() as $player){
+              	$online++;
+              }
               $maxplayers = ???
                 $sender->sendMessage("§");
                 $sender->sendMessage("§aPlayer Count§c:§b $online §3/§b $maxplayers!);
