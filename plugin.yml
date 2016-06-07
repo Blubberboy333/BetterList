@@ -1,0 +1,13 @@
+name: BetterList
+main: EnchantedRealms\Main
+version: 1.0.0
+api: 2.0.0
+author: EnchantedRealms
+ commands:
+   list:
+   description: Shows the online players!
+ permissions:
+  list:
+   default: true
+   description: Shows the online players!
+  
